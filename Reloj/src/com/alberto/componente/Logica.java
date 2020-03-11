@@ -1,5 +1,6 @@
-package us.com.alberto.componente;
+package com.alberto.componente;
 
+import com.alberto.tareas.Tarea;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -17,19 +18,15 @@ public class Logica {
         return INSTANCE;
     }
 
-    public void añadirTarea(Tarea tarea){
-        listaTareas.add(tarea);
-    }
-
-    public void borrarTarea(Tarea tarea){
-        listaTareas.remove(tarea);
-    }
-
     public List<Tarea> getListaTareas() {
         return listaTareas;
     }
 
     public void setListaTareas(List<Tarea> listaTareas) {
         this.listaTareas = listaTareas;
+    }
+
+    public void añadirTarea(Tarea tarea){
+        listaTareas.add(tarea);
     }
 }
